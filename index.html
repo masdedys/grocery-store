@@ -32,10 +32,10 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item produk-kategori">All Products</a></li>
-                  <li><a class="dropdown-item produk-kategori">Pengembangan Diri</a></li>
-                  <li><a class="dropdown-item produk-kategori">Bisnis</a></li>
-                  <li><a class="dropdown-item produk-kategori">Komputer</a></li>
-                  <li><a class="dropdown-item produk-kategori">Hobi</a></li>
+                  <li><a class="dropdown-item produk-kategori">Self Improvement</a></li>
+                  <li><a class="dropdown-item produk-kategori">Business</a></li>
+                  <li><a class="dropdown-item produk-kategori">Computer</a></li>
+                  <li><a class="dropdown-item produk-kategori">Hobby</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -105,11 +105,11 @@
 		</div>
     </div>
     <!-- copyright end -->
-    <div class="modal fade" id="hubungikamidiig" tabindex="-1" aria-labelledby="hubungikamidiig" aria-hidden="true">
+    <div class="modal fade" id="modalDetail" tabindex="-1" aria-labelledby="modalDetailLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="modal-title fs-5" id="hubungikamidiig">Movie Selected</h2>
+            <h2 class="modal-title fs-5" id="modalDetailLabel">Product Selected</h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body text-center" id="modalData">
@@ -141,7 +141,9 @@
               data.title +
               '"><div class="card-body"><small class="text-dark mb-2">' +
               data.genre +
-              '</small><a href="#" onclick="tampilDetail(' + data.id + ')" class="card-title" data-bs-toggle="modal" data-bs-target="#hubungikamidiig">' +
+              '</small><a href="#" title="' +
+              data.title +
+              '" onclick="tampilDetail(' + data.id + ')" class="card-title" data-bs-toggle="modal" data-bs-target="#modalDetail">' +
               data.title +
               '</a></div></div>'
             );
@@ -179,7 +181,9 @@
                 item.title +
                 '"><div class="card-body"><small class="text-dark mb-2">' +
                 item.genre +
-                '</small><a href="#" onclick="tampilDetail(' + item.id + ')" class="card-title" data-bs-toggle="modal" data-bs-target="#hubungikamidiig">' +
+                '</small><a href="#" title="' +
+              item.title +
+              '" onclick="tampilDetail(' + item.id + ')" class="card-title" data-bs-toggle="modal" data-bs-target="#modalDetail">' +
                 item.title +
                 '</a></div></div>';
             }

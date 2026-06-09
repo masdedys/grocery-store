@@ -70,7 +70,7 @@ html[data-color-mode="dark"] .dropdown-menu .dropdown-item:hover{
   text-decoration: none;
   font-size: 14px;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -95,7 +95,7 @@ div.dt-search input {
     background-color: #f0f4f8 !important;
     color: #333333 !important;
 }
-div.dt-container .dt-paging button.dt-paging-button {
+/* div.dt-container .dt-paging button.dt-paging-button {
     background-color: var(--color-red) !important;
     color: var(--color-white) !important;
     border: none !important;
@@ -104,7 +104,7 @@ div.dt-container .dt-paging button.dt-paging-button.current{
     background-color: var(--color-red-hover) !important;
     color: var(--color-white) !important;
     border: none !important;
-}
+} */
 
 /* -----------/td color---------- */
 .searchMovie{
@@ -189,7 +189,7 @@ h3 > .hovera:hover {
   }
   a.card-title{
     font-size: 14px;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   }
@@ -208,7 +208,7 @@ h3 > .hovera:hover {
   }
   a.card-title{
     font-size: 12px;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   }
