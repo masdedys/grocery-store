@@ -1,32 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" data-color-mode="orange">
+<html lang="en" data-color-mode="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jual Buku Bekas, Produk Bekas lokasi Jakarta Timur | masdedys.github.io</title>
+    <title>Jual Produk Jakarta | masdedys.github.io</title>
     <!--title icon-->
-    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
-    <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!--css-->
-    <link rel="stylesheet" href="css/style.css">
-    <!--aos-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!--font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    <!--pace js-->
-    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    <link rel="shortcut icon" href="assets/img/logo.png" />
+    <link rel="stylesheet" href="assets/bootstrap-5.2.3/css/bootstrap.min.css"  />
+    <link rel="stylesheet" href="assets/icons-1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="css/barber-shop.css" />
   </head>
-  <body id="home">
-    <div class="container">
-      <!--navbar-->
-      <nav class="navbar fixed-top navbar-expand-lg mb-5 mb-sm-2">
+  <body>
+    <!--navbar-->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-custom">
         <div class="container py-3">
-          <a class="navbar-brand" href="https://masdedys.github.io">
+          <a class="navbar-brand" href="https://masdedys.github.io/">
             <img src="assets/img/logo.png" alt="logo mas_dedys" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,78 +24,58 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#home">Beranda</a>
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item produk-kategori">All Products</a></li>
+                  <li><a class="dropdown-item produk-kategori">Pengembangan Diri</a></li>
+                  <li><a class="dropdown-item produk-kategori">Bisnis</a></li>
+                  <li><a class="dropdown-item produk-kategori">Komputer</a></li>
+                  <li><a class="dropdown-item produk-kategori">Hobi</a></li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#category">Kategori</a>
+                <a class="nav-link" href="pages/searching.html">Search</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <!--/navbar-->
-    </div>
-    <!--jumbotron-->
-    <div class="container mb-5">
-      <section class="header my-5 py-5 my-sm-2 py-sm-2" id="header">
-        <div class="jumbotron container my-5 my-sm-0 py-sm-0">
-          <h2 class="display-4 my-4 pt-5" data-aos="fade-up">Hello</h1>
-          <p class="lead" data-aos="fade-up" data-aos-delay="300">Assalamu'alaykum.. Selamat datang di toko saya, disini saya menjual beberapa barang. Untuk info lebih lanjut bisa chat saya di instagram saya di <strong><a href="https://www.instagram.com/mas_dedys/" title="Lanjutkan ke ig saya" target="_blank">mas_dedys</a></strong>. Terima Kasih</p>
-          <a class="btn btn-lg float-end mb-5" href="#category" role="button">Cari Produk</a>
-        </div>
-      </section>
-    </div>
-    <!--/jumbotron-->
+    <!--/navbar-->
     <div class="container mt-5">
-      <!--kategori-->
-      <section class="category py-5 my-5 my-sm-2 py-sm-2" id="category">
-        <div class="row mt-5 py-5 mt-sm-2 pt-sm-2">
-          <h2 class="py-5 mt-5">Kategori</h2>
-          <div class="col-sm justify-content-between gap-5 my-3">
-            <button type="button" class="btn btn-lg produk-kategori my-3">Semua Produk</button>
-            <button type="button" class="btn btn-lg produk-kategori my-3">Pengembangan Diri</button>
-            <button type="button" class="btn btn-lg produk-kategori my-3">Bisnis</button>
-            <button type="button" class="btn btn-lg produk-kategori my-3">Komputer</button>
-            <button type="button" class="btn btn-lg produk-kategori my-3">Hobi</button>
+      <!--fantasi-->
+      <section id="category" class="category mt-5 pt-5">
+        <div class="row">
+          <div class="col-md">
+            <h1 class="title text-center">All Products</h1>
           </div>
         </div>
-      </section>
-      <!--/kategori-->
-      <!--product-->
-      <section id="product" class="product">
-        <h1>Semua Produk</h1>
-        <div class="row mt-1 py-2 mt-sm-2 pt-sm-2 justify-content-center" id="daftar-produk">
-          
+        <div class="row mt-1 py-2 mt-sm-2 pt-sm-2 justify-content-center align-items-center" id="daftar-produk">
         </div>
       </section>
-      <!--/product-->
+      <!--/fantasi-->
     </div>
-    <!--footer-->
-    <div class="container-fluid" id="footer">
-      <footer>
-        <div class="row text-light">
+    <footer>
+    <div class="container-fluid">
+      <div class="container">  
+        <div class="row text-light align-items-center justify-content-center">
           <div class="col-sm-4 py-5">
             <ul>
               <li>
                 <p><img src="assets/img/logo.png" class="img-fluid justify-content-center" alt="logo mas_dedys" /></p>
-              </li>
-              <li><h3>Kunjungi saya juga di</h3></li>
-            </ul>
-            <ul class="social circle">
-              <li>
-                <a href="https://github.com/masdedys" target="_blank"><i class="bi bi-github"></i></a>
-                <!-- <a href="https://dribbble.com/masdedys" target="_blank"><i class="bi bi-dribbble"></i></a> -->
-                <a href="http://masdedys.blogspot.com/" target="_blank"><i class="bi bi-type-bold"></i></a>
-                <a href="https://play.google.com/store/apps/developer?id=Dedy+Setiawan&hl=id" target="_blank"><i class="bi bi-google-play"></i></a>
               </li>
             </ul>
           </div>
           <div class="col-sm-4 py-5">
             <ul class="listinfo">
               <li><h3>Syarat dan Ketentuan</h3></li>
-              <li><a href="pages/syarat-dan-ketentuan-pembelian.html" target="_blank">Syarat dan Ketentuan</a></li>
-              <li><a href="pages/faq.html" target="_blank">F.A.Q</a></li>
-              <li><a href="pages/kontak.html" target="_blank">Kontak</a></li>
+              <li><a href="pages/notes.html" target="_blank">Syarat dan Ketentuan</a></li>
+              <!-- <li><a href="pages/faq.html" target="_blank">F.A.Q</a></li>
+              <li><a href="pages/kontak.html" target="_blank">Kontak</a></li> -->
             </ul>
           </div>
           <div class="col-sm-4 py-5">
@@ -124,71 +93,57 @@
             </ul>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
-    <!--/footer-->
+    </footer>
     <!-- copyright start -->
-        <div class="copyright container-fluid">
-            <div class="copyright-item container">
-                <div class="row">
-                    <div class="col-md text-dark">
-                        <small>&copy;2026&nbsp;<a href="https://masdedys.github.io/">masdedys.github.io</a>, All Rights Reserved</small>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="container">
+      <div class="row align-items-end text-dark py-3">
+			<div class="col-md copyright-item text-center">
+				<small class="text-dark">&copy;2026&nbsp;<a href="https://masdedys.github.io/" class="text-dark link-info">masdedys.github.io</a>, All Rights Reserved</small>
+			</div>
+		</div>
+    </div>
     <!-- copyright end -->
-    <!-- Modal silahkan hubungi kami-->
     <div class="modal fade" id="hubungikamidiig" tabindex="-1" aria-labelledby="hubungikamidiig" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="modal-title fs-5" id="hubungikamidiig">Terima kasih</h2>
+            <h2 class="modal-title fs-5" id="hubungikamidiig">Movie Selected</h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body text-center">
-            <span style="font-size: 100px">&#128522;</span>
-            <h3>Terima Kasih</h3>
-            <p>
-              Sebelum memesan, baca dulu yuk <a href="pages/syarat-dan-ketentuan-pembelian.html" target="_blank">Syarat dan Ketentuan</a>. Kalau sudah Kamu bisa langsung hubungi saya di instagram saya di
-              <a href="https://www.instagram.com/mas_dedys/" target="_blank">@mas_dedys</a> atau klik link dibawah.
-            </p>
-            <a href="https://www.instagram.com/mas_dedys/" target="_blank" type="button" class="btn btn-primary">Instagram ku</a>
+          <div class="modal-body text-center" id="modalData">
+            <img class="mb-2" src="" id="img" width="30%" height="30%"><br>
+            <div class="fw-bold h5" id="title"></div>
+            <div class="" id="harga"></div>
+            <button class="btn btn-red" id="sinopsis" onclick="ProsesData()">Detail</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- /Modal silahkan hubungi kami-->
     <!--bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!--aos-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!--jquery-->
-    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="assets/jquery/jquery-3.7.1.js"></script>
+	<script src="assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
     <!--javascript include-->
-    <script src="js/script.js"></script>
+    <script src="assets/js/script.js"></script>
     <script>  
       function TampilkanSemuaProduk() {
-        $.getJSON("js/listjualan.json", function (data) {
-          let produk = data.produk;
+        $.getJSON("assets/js/productList.json", function (data) {
+          let produk = data.productList;
           //console.log(menu);
           $("#daftar-produk").empty();
           $.each(produk, function (i, data) {
             //console.log(data);
             $("#daftar-produk").append(
-              '<div class="card col-sm-3 m-3"><img src="assets/jualan/' +
-                data.gambar +
-                '" width="18rem" class="card-img-top mx-auto" alt="gambar ' +
-                data.nama +
-                '"><div class="card-body"><h5 class="card-title">' +
-                data.nama +
-                "</h5><span>Rp." +
-                data.harga +',-'+
-                '</span><br><div class="mt-2"><small class="rounded me-2 px-3">' +
-                data.kategori +
-                '</small><small class="rounded">' +
-                data.jenis +
-                '</small></div><br><div class="product-icons"><a href="detail/detail-produk.html" onclick="document.cookie ='+ data.id +'" class="btn" target="_blank" alt="Detail" title="Detail Produk"><i class="bi bi-eye"></i></a><a href="#" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#hubungikamidiig" alt="Beli" title="Beli Produk"><i class="bi bi-cart4"></i></a></div></div></div>'
+              '<div class="card col-4 col-md-2 col-sm-3 m-3"><img src="assets/jualan/' +
+              data.img +
+              '" width="10rem" class="card-img-top" alt="gambar ' +
+              data.title +
+              '"><div class="card-body"><small class="text-dark mb-2">' +
+              data.genre +
+              '</small><a href="#" onclick="tampilDetail(' + data.id + ')" class="card-title" data-bs-toggle="modal" data-bs-target="#hubungikamidiig">' +
+              data.title +
+              '</a></div></div>'
             );
           });
         });
@@ -204,38 +159,85 @@
         //   console.log(category);
         $("h1").html(category);
 
-        if (category == "Semua Produk") {
+        if (category == "All Products") {
           TampilkanSemuaProduk();
           return;
         }
 
-        $.getJSON("js/listjualan.json", function (data) {
-          let produk = data.produk;
+        $.getJSON("assets/js/productList.json", function (data) {
+          let produk = data.productList;
           let content = "";
+          let found = false;
 
-          $.each(produk, function (i, data) {
-            if (data.kategori == category.toLowerCase()) {
-              content += 
-              '<div class="card col-sm-3 m-3"><img src="assets/jualan/' +
-                data.gambar +
-                '" width="18rem" class="card-img-top mx-auto" alt="gambar ' +
-                data.nama +
-                '"><div class="card-body"><h5 class="card-title">' +
-                data.nama +
-                "</h5><span>Rp." +
-                data.harga +',-'+
-                '</span><br><div class="mt-2"><small class="rounded me-2 px-3">' +
-                data.kategori +
-                '</small><small class="rounded">' +
-                data.jenis +
-                '</small></div><br><div class="product-icons"><a href="detail/detail-produk.html" onclick="document.cookie ='+ data.id +'" class="btn" target="_blank" alt="Detail" title="Detail Produk"><i class="bi bi-eye"></i></a><a href="#" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#hubungikamidiig" alt="Beli" title="Beli Produk"><i class="bi bi-cart4"></i></a></div></div></div>';
+          $.each(produk, function (i, item) {
+            if (item.genre && item.genre.toLowerCase() === category.toLowerCase()) {
+              found = true;
+              content +=
+                '<div class="card col-4 col-md-2 col-sm-3 m-3"><img src="assets/jualan/' +
+                item.img +
+                '" width="10rem" class="card-img-top" alt="gambar ' +
+                item.title +
+                '"><div class="card-body"><small class="text-dark mb-2">' +
+                item.genre +
+                '</small><a href="#" onclick="tampilDetail(' + item.id + ')" class="card-title" data-bs-toggle="modal" data-bs-target="#hubungikamidiig">' +
+                item.title +
+                '</a></div></div>';
             }
           });
+
+          if (!found) {
+            content = "<h2 class='text-center my-5 py-3'>Maaf kategori " + category + " belum tersedia</h2>";
+          }
 
           $("#daftar-produk").html(content);
         });
       });
 
+    </script>
+    <script>
+        // Fungsi untuk membuka modal dan memuat data
+        function tampilDetail(idTombol) {
+            // // Tampilkan modal
+            // const overlay = document.getElementById('modalOverlay');
+            // overlay.classList.add('active');
+            // Ambil data dari file JSON
+            fetch('assets/js/productList.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Cari data berdasarkan ID tombol yang diklik
+                    const detail = data.productList.find(item => item.id == idTombol);
+                    
+                    // Tampilkan data ke dalam modal
+                    const modalData = document.getElementById('modalData');
+                    if (detail) {
+                      document.getElementById("title").innerText = detail.title;
+                      document.getElementById("harga").innerText = detail.price;
+                     document.getElementById('sinopsis').setAttribute('data-id', detail.id);
+                      // Mengubah atribut 'src' gambar modal secara dinamis
+                      document.getElementById("img").src = `assets/jualan/${detail.img}`;
+                        // modalData.innerHTML = `
+                        //     <p><strong>Judul:</strong> ${detail.title}</p>
+                        //     <p><strong>Genre:</strong> ${detail.genre}</p>
+                        //     <p><strong>Harga:</strong> ${detail.price}</p>
+                        // `;
+                    } else {
+                        modalData.innerHTML = `<p style="color:red;">Data tidak ditemukan!</p>`;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('modalData').innerHTML = `<p style="color:red;">Gagal memuat data.</p>`;
+                });
+        }
+
+        // Fungsi yang dieksekusi saat tombol di dalam modal diklik
+function ProsesData() {
+  const tombol = document.getElementById('sinopsis');
+  const idData = tombol.getAttribute('data-id');
+  
+ // 2. Arahkan ke halaman baru dengan membawa parameter ID di URL
+  window.location.href = `pages/detail.html?id=${idData}`;
+}
     </script>
   </body>
 </html>
